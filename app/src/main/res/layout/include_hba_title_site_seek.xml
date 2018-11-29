@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    >
+
+        <TextView
+            android:id="@+id/hba_location"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="北京八维研修学院" />
+
+        <LinearLayout
+
+            android:id="@+id/hba_animation"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="40dp"
+            android:background="@drawable/ahape_bg">
+
+            <ImageView
+                android:id="@+id/hba_search_imag"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                 android:src="@drawable/ic_search_black_24dp"
+                />
+
+
+
+            <EditText
+                android:id="@+id/hba_search_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+    </LinearLayout>

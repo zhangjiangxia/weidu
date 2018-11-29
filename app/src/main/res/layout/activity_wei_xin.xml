@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bw.movie.view.activity.WeiXinActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/weixin"
+            />
+
+        <TextView
+            android:id="@+id/w_weixin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="微信支付"
+            android:textSize="45dp"
+
+            />
+<CheckBox
+    android:id="@+id/checkbox_weixin"
+    android:checked="true"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/zhifubao"
+            />
+        <TextView
+            android:id="@+id/w_zhifubai"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="45dp"
+            android:text="支付宝支付"
+            />
+        <CheckBox
+            android:id="@+id/checkbox_zhifubao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+<TextView
+    android:id="@+id/jiage"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="pricexxx"
+    android:gravity="center"
+    android:background="#f00"
+    android:textSize="18dp"
+    android:textColor="#fff"
+    />
+</LinearLayout>

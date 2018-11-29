@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+<RadioGroup
+    android:id="@+id/c_radioGroup"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/c_xingqing"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:text="详情"
+        android:textColor="#fff"
+        android:button="@null"
+        android:textSize="25sp"
+        android:background="@drawable/jianbian_shape"
+        />
+
+    <RadioButton
+        android:id="@+id/c_pinlun"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:text="评论"
+        android:textColor="#fff"
+        android:button="@null"
+        android:textSize="25sp"
+        android:background="@drawable/jianbian_shape"
+        />
+</RadioGroup>
+
+
+<LinearLayout
+    android:id="@+id/cc"
+    android:visibility="visible"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/weizhi"
+                />
+            <TextView
+                android:id="@+id/c_weizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="xxx"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/dianhua"
+                />
+            <TextView
+                android:id="@+id/c_dianhua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="xxx"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/chengche"
+                />
+            <TextView
+                android:id="@+id/c_chengche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="xxx"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地铁："
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/c_ditie"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxx"
+            />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公交："
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/c_gongjiao"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxx"
+            />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自驾："
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/c_zijia"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxx"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+<LinearLayout
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:id="@+id/pp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/po_RecyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="400dp">
+   </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+
+</LinearLayout>
